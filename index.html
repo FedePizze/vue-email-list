@@ -9,10 +9,16 @@
 </head>
 <body>
 
+    
+
     <div id="app">
-        <ul>
+
+        <button @click="caricaEmail">Start</button>
+
+        <ul v-if="arrayMail.length == 10">
             <li v-for="elemento in arrayMail">{{elemento}}</li>
         </ul>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
